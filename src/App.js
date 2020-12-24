@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <Board/>
       </header>
-      <Layout><Footer style={{ textAlign: 'center',padding:'1.7vh 24px' }}>Minesweeper ©2020 Created by Swagat Kumar NITR-EE700</Footer></Layout>
+      <Layout><Footer style={{ textAlign: 'center',padding:'1.8vh 24px' }}>Minesweeper ©2020 Created by Swagat Kumar NITR-EE700</Footer></Layout>
       
     </div>
   );
