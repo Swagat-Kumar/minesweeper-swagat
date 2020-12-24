@@ -10,7 +10,7 @@ first, git fork and clone this repository.
 
 ```shell
 git clone https://github.com/Swagat-Kumar/minesweeper-swagat
-cd minesweeper
+cd minesweeper-swagat
 ```
 
 install npm packages.
