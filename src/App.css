@@ -1,3 +1,4 @@
+@import "antd/dist/antd.css";
 .App {
   text-align: center;
 }
@@ -14,8 +15,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #20232b;
+  widows: 100%;
+  min-height: 93vh;
   display: flex;
   flex-direction: column;
   align-items: center;
