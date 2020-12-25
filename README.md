@@ -3,7 +3,7 @@
 Play : https://minesweeper.swagatkumar.net/
 
 <p align="center">
-  <img src="https://github.com/Swagat-Kumar/minesweeper-swagat/main.jpg?raw=true" alt="Minesweeper game">
+  <img src="https://github.com/Swagat-Kumar/minesweeper-swagat/tree/testing/main.jpg?raw=true" alt="Minesweeper game">
 </p>
 
 a simple build of the classic minesweeper game using react-redux.
