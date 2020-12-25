@@ -2,7 +2,7 @@ import React from 'react';
 import {useDispatch,useSelector} from 'react-redux';
 // import Draggable from 'react-draggable';
 import CellContainer from './CellContainer';
-import {Modal} from 'antd';
+import {Modal,Progress} from 'antd';
 import './Board.css';
 import {restart,modalCancel} from '../controller/Actions';
 
@@ -13,6 +13,7 @@ const Board = () => {
     const [disabled,setdisabled]=React.useState(true);
     const showModal=useSelector(state =>state.lost);
     const counterMarked=useSelector(state=>state.win);
+    const countNow=useSelector(state =>state.counter);
     const [confirmLoading,setConfirmLoading]=React.useState(false);
     const [modalText,setModalText]=React.useState('Failure is a detour, not a dead-end street. Try Again!!');
     const [modalSuccessText,setModalSuccessText]=React.useState('Winner Winner Chicken Dinner!');
@@ -75,7 +76,17 @@ const Board = () => {
         >
         <p>{modalSuccessText}</p>
         </Modal>
+        <p className="FlagMine">Flagged Mines - <strong className="Bomb">{countNow}</strong><strong className="DivideBomb">|</strong><strong className="BombCount">9</strong></p>
+        <Progress
+            status="active"
+            percent={countNow*12}
+            steps={9}
+            showInfo={false}
+            style={{}}
+        />
+         <br/>
         <div className="Wrapper">
+            
             {Array(width*height).fill().map((x,y)=>
             <CellContainer key={y} x={y%width} y={Math.floor(y/width)}/>)}
         </div>

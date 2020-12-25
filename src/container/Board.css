@@ -5,3 +5,32 @@
   margin: 10px auto 0 auto;
   width: 360px;
 }
+.ant-progress-steps-item.ant-progress-steps-item-active {
+  background-color: #0050b3;
+}
+.ant-progress-steps-item {
+  margin: 6px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.FlagMine {
+  font-family: "Indie Flower", cursive;
+  font-size: large;
+  color: #f5f5f5;
+}
+.Bomb {
+  animation: blink 1s linear infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.BombCount {
+  color: #a8071a;
+}
+.DivideBomb {
+  font-size: x-large;
+  color: #0c0c0c;
+  font-weight: bold;
+}
