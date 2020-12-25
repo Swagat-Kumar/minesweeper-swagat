@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Merienda:wght@700&display=swap");
 .Wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -14,8 +15,8 @@
   border-radius: 4px;
 }
 .FlagMine {
-  font-family: "Indie Flower", cursive;
-  font-size: large;
+  font-family: "Merienda", Helvetica, sans-serif;
+  font-size: 17px;
   color: #f5f5f5;
 }
 .Bomb {
@@ -30,7 +31,7 @@
   color: #a8071a;
 }
 .DivideBomb {
-  font-size: x-large;
+  font-size: 21px;
   color: #0c0c0c;
   font-weight: bold;
 }
